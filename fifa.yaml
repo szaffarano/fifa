@@ -1,0 +1,16 @@
+regex:
+
+- name: match-hola
+  description: Si un archivo de texto tiene la palabra HOLA
+  glob: "*.txt"
+  pattern: hola
+
+- name: match-delete
+  description: Si un archivo SQL tiene la palabra delete
+  glob: "*.sql"
+  pattern: delete
+
+- name: match-chau
+  description: Si en cualquier archivo existe la palabra chau
+  glob: "*"
+  pattern: "\\schau"
