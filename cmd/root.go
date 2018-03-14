@@ -52,8 +52,23 @@ func init() {
 			"conf",
 			"c",
 			"",
-			`Archivo de configuración
-			@TODO agregar ejemplo
+			`Archivo de configuración.  Soporta formato yaml, json, .properties
+			y hcl.  Si no se especifica, por default buscará los archivos
+			- $HOME/.fifa/conf.[yaml|properties|json]
+			- ./conf.[yaml|properties|json]
+			
+			Un ejemplo de configuración en formato yaml sería:
+
+			regex:
+				- name: id1
+				  description: Validación 1
+				  glob: *.txt
+				  pattern: "Hola\\sMundo"
+
+				- name: id2
+				  description: Validación 2
+				  glob: "*"
+				  pattern: "[a-z][1-9]{2,3}"
 		 	`)
 }
 
