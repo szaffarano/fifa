@@ -18,7 +18,7 @@ var (
 
 	rootCmd = &cobra.Command{
 		Use:   "fifa",
-		Short: "Fast and Improved File Analizer",
+		Short: "Flexible and Improved File Analizer",
 		Long: `Parsea y analiza archivos en búsqueda de patrones, según 
 		configuración`,
 	}

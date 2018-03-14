@@ -1,6 +1,6 @@
 ## fifa
 
-Fast and Improved File Analizer
+Flexible and Improved File Analizer
 
 ### Synopsis
 
