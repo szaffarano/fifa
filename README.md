@@ -3,7 +3,7 @@
 ## Modo de uso
 
 ```sh
-fifa [-v] <archivo>
+fifa [-v] parse <archivo>
 ```
 
 Para más información consultar [la documentación](./doc/fifa.md).
@@ -15,7 +15,7 @@ La configuración por default deberá estar en un archivo `conf.EXTENSION`, sien
 
 - yaml
 - json
-- .properties
+- properties
 
 Un ejemplo de un archivo de configuración yaml es
 
@@ -23,7 +23,7 @@ Un ejemplo de un archivo de configuración yaml es
 regex:
     - name: id1
         description: Validación 1
-        glob: *.txt
+        glob: "*.txt"
         pattern: "Hola\\sMundo"
 
     - name: id2
@@ -36,7 +36,7 @@ regex:
 
 El archivo `Makefile` provisto construye la aplicación compatible con linux y
 windows 32 y 64 bits.  previo a invocarlo se necesitan instalar las 
-dependencias, en forma global, o mejor aún local, con glide:
+dependencias, en forma global, o mejor aún local, con [glide](https://github.com/Masterminds/glide):
 
 ```sh
 $ glide i
